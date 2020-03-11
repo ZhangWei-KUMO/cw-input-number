@@ -1,0 +1,64 @@
+{
+  "name": "cw-input-number",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "react-component",
+    "input-number"
+  ],
+  "files": [
+    "lib",
+    "es",
+    "assets",
+    "dist"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "config": {
+    "port": 8000,
+    "entry": {
+      "cw-input-number": [
+        "./src/index.js",
+        "./assets/index.less"
+      ]
+    }
+  },
+  "repository": "git@github.com:ZhangWei-KUMO/cw-input-number.git",
+  "author": "ZhangWei-KUMO <kanseefoil@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dist": "rc-tools run dist",
+    "build": "rc-tools run build",
+    "compile": "rc-tools run compile --babel-runtime",
+    "gh-pages": "rc-tools run gh-pages",
+    "start": "rc-tools run server",
+    "pub": "rc-tools run pub --babel-runtime",
+    "lint": "rc-tools run lint",
+    "karma": "rc-test run karma",
+    "test": "rc-test run test",
+    "saucelabs": "rc-test run saucelabs",
+    "chrome-test": "rc-test run chrome-test",
+    "coverage": "rc-test run coverage"
+  },
+  "devDependencies": {
+    "core-js": "^2.5.1",
+    "create-react-class": "^15.6.2",
+    "expect.js": "~0.3.1",
+    "pre-commit": "1.x",
+    "rc-test": "^6.0.1",
+    "rc-tools": "^7.0.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "sinon": "^9.0.1"
+  },
+  "dependencies": {
+    "babel-runtime": "6.x",
+    "classnames": "^2.2.0",
+    "prop-types": "^15.5.7",
+    "rmc-feedback": "^2.0.0",
+    "rc-util": "^4.5.1"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
