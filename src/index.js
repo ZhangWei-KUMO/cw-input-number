@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import classNames from 'classnames';
 import KeyCode from 'rc-util/lib/KeyCode';
 import InputHandler from './InputHandler';
